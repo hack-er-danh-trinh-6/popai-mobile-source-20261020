@@ -18,8 +18,8 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        // Published Manus backend; keep trailing slash for Retrofit route resolution.
-        buildConfigField("String", "BASE_URL", "\"https://popapi-enbza78g.manus.space/\"")
+        // Render backend; keep trailing slash for Retrofit route resolution.
+        buildConfigField("String", "BASE_URL", "\"https://popai-api-0x1r.onrender.com/\"")
     }
 
     buildTypes {
