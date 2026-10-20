@@ -1,0 +1,22 @@
+{
+  "name": "pop-ai-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.18.0",
+  "engines": {
+    "node": "22.13.0"
+  },
+  "scripts": {
+    "dev": "node --watch server/index.js",
+    "start": "node server/index.js",
+    "check": "node --check server/index.js && node --check server/db.js && node --check server/domain.js && node --check server/security.js && node --check server/routes/auth.js && node --check server/routes/pop.js && node --check server/ai.js && node --check server/aiContext.js && node --check server/classroomDomain.js && node --check server/routes/classroom.js && node --check server/routes/teacher.js",
+    "test": "node --test server/*.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "3.0.2",
+    "express": "5.1.0",
+    "express-rate-limit": "7.5.1",
+    "pg": "8.16.3"
+  }
+}

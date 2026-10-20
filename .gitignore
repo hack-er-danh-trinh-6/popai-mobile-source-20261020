@@ -1,0 +1,22 @@
+# Runtime secrets and local config
+.env
+.env.*
+!.env.example
+local.properties
+
+# Android / Gradle generated output
+.gradle/
+**/build/
+.kotlin/
+.idea/
+*.iml
+*.apk
+*.aab
+
+# Node generated output
+node_modules/
+Backend/node_modules/
+
+# OS/editor
+.DS_Store
+*.log
